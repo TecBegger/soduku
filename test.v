@@ -85,11 +85,15 @@ always @(posedge clk) begin
   end
 end
 
-function automatic byte read_data(input [7:0] addr);
+function byte read_data;
+  input [7:0] addr;
   // 读取数据
+  return 0;
 endfunction
 
-function automatic void write_data(input [7:0] addr, input [7:0] data);
+function void write_data;
+  input [7:0] addr;
+  input [7:0] data;
   // 写入数据
 endfunction
 
